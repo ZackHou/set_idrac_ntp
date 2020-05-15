@@ -116,17 +116,17 @@ def get_install_racadm_set():
             return "CentOS 8 下载iDRACTools-9.4.0失败。"
     else:
         print("不支持的操作系统。")
-        return "不支持的操作系统。"
-
+        return "failed"
 
 #判断机型
-# def if_model():
-#     dell_model = run_cmd("dmidecode -t 1|grep 'Dell'", 'true')
-#     if dell_model:
-#         get_racadm()
-#         logger.send(0, "set dell idrac ntp")
-#     else:
-#          logger.send(1, "It's not a dell server")
+def if_model():
+    dell_model = run_cmd("dmidecode -t 1|grep 'Dell'", 'true')
+    if dell_model:
+        print("开始设置iDrac NTP和时区设置")
+        if get_install_racadm_set() == "failed":
+            print("不支持的操作系统。")
+    else:
+         print("It's not a dell server")
 
 if __name__ == '__main__':
-    get_install_racadm_set()
+    if_model()
