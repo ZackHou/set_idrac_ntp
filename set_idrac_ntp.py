@@ -60,7 +60,7 @@ def get_install_racadm_set():
             with open('DellEMC-iDRACTools-Web-LX-9.4.0-3732_A00.tar.gz','wb') as code:
                 code.write(r.content)
             run_cmd('tar -zxf DellEMC-iDRACTools-Web-LX-9.4.0-3732_A00.tar.gz', 'true')
-            run_cmd('rpm -ivh ./iDRACTools/racadm/RHEL7/x86_64/srvadmin-hapi-9.4.0-3732.15734.el7.x86_64.rpm, 'true')
+            run_cmd('rpm -ivh ./iDRACTools/racadm/RHEL7/x86_64/srvadmin-hapi-9.4.0-3732.15734.el7.x86_64.rpm', 'true')
             run_cmd('rpm -ivh ./iDRACTools/racadm/RHEL7/x86_64/srvadmin-argtable2-9.4.0-3732.15734.el7.x86_64.rpm', 'true')
             run_cmd('rpm -ivh ./iDRACTools/racadm/RHEL7/x86_64/srvadmin-idracadm7-9.4.0-3732.15734.el7.x86_64.rpm', 'true')
             #设置iDrac时区为上海
