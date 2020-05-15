@@ -75,7 +75,6 @@ def get_install_racadm_set():
         else:
             return "CentOS 7 下载iDRACTools-9.4.0失败。"
     elif os_version_8:
-        elif os_version_7:
         r = requests.get("https://dl.dell.com/FOLDER05920767M/1/DellEMC-iDRACTools-Web-LX-9.4.0-3732_A00.tar.gz")
 
         if r.status_code == 200:
