@@ -8,8 +8,6 @@ import time
 from threading import Timer
 import requests
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0]))))
-
 def run_cmd(cmd, stdout="true", time_out=120):
     """
     Execute shell command.
