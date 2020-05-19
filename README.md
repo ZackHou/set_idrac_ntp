@@ -1,1 +1,6 @@
-
+NTP地址是我随便从网上找了两个
+需要表更为你idrac能访问的NTP服务器地址
+iDRAC.NTPConfigGroup.NTP1 你的NTP服务器地址
+iDRAC.NTPConfigGroup.NTP2 你的NTP服务器地址
+这个是OS下带内的修改，带外的修改后面有时间再加
+不接受任何批评，不用就别逼逼。
