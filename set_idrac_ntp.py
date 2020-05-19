@@ -50,7 +50,7 @@ def get_install_racadm_set():
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTPEnable 1', 'true')
             #设置iDrac NTP服务器1,此处设置的是网上搜的一个阿里的NTP服务器ip，如果需要配置域名NTP地址例如ntp1.aliyun.com，则还需要配置iDrac的dns。
             print("设置NTP1")
-            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20]', 'true')
+            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20', 'true')
             # 设置iDrac NTP服务器2此处设置的是网上搜的一个腾讯的NTP服务器ip，如果需要配置域名NTP地址例如time1.cloud.tencent.com，则还需要配置iDrac的dns。
             print("设置NTP2")
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP2 139.199.215.251', 'true')
@@ -77,7 +77,7 @@ def get_install_racadm_set():
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTPEnable 1', 'true')
             # 设置iDrac NTP服务器1,此处设置的是网上搜的一个阿里的NTP服务器ip，如果需要配置域名NTP地址例如ntp1.aliyun.com，则还需要配置iDrac的dns。
             print("设置NTP1")
-            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20]', 'true')
+            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20', 'true')
             # 设置iDrac NTP服务器2此处设置的是网上搜的一个腾讯的NTP服务器ip，如果需要配置域名NTP地址例如time1.cloud.tencent.com，则还需要配置iDrac的dns。
             print("设置NTP2")
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP2 139.199.215.251', 'true')
@@ -105,7 +105,7 @@ def get_install_racadm_set():
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTPEnable 1', 'true')
             # 设置iDrac NTP服务器1,此处设置的是网上搜的一个阿里的NTP服务器ip，如果需要配置域名NTP地址例如ntp1.aliyun.com，则还需要配置iDrac的dns。
             print("设置NTP2")
-            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20]', 'true')
+            run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP1 120.25.115.20', 'true')
             # 设置iDrac NTP服务器2此处设置的是网上搜的一个腾讯的NTP服务器ip，如果需要配置域名NTP地址例如time1.cloud.tencent.com，则还需要配置iDrac的dns。
             print("设置NTP2")
             run_cmd('/opt/dell/srvadmin/sbin/racadm set iDRAC.NTPConfigGroup.NTP2 139.199.215.251', 'true')
